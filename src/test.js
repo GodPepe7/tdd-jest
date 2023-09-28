@@ -1,3 +1,11 @@
+import {
+  capitalize,
+  reverseString,
+  calculator,
+  caesarCipher,
+  analyzeArray,
+} from ".";
+
 test("capitalizes first letter", () => {
   expect(capitalize("noob")).toBe("Noob");
 });
@@ -15,8 +23,8 @@ test("calculator operations", () => {
 
 test("ceaser shifting", () => {
   expect(caesarCipher("sup", 2)).toBe("uwr");
-  expect(caesarCipher("za", 1)).toBe("ab");
-  expect(caeserCipher("defend.", 3)).toBe("efgfoe.");
+  expect(caesarCipher("aza", 1)).toBe("bab");
+  expect(caesarCipher("defend.", 1)).toBe("efgfoe.");
 });
 
 test("analyze array", () => {
